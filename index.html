@@ -2,14 +2,52 @@
 <html lang = "en">
     <head>
         <title>About Stephen</title>
+        <link rel="icon" href="img/DragonRed.png">
         <style>
-            .h1{
-                color: red;
+            body{
+                font-family:'Trebuchet MS', Arial, sans-serif;
+                color:maroon;
+                background-color: rgb(161, 220, 161);
+            }
+            .image{
+                float: right;
+                padding: 10px;
+            }
+            td, th{
+                border: 1px solid black;
+                padding: 3px;
+                border-spacing: 3px;
+                text-align: start;
+                width: 100px;
+                
+            }
+            .flex{
+                background-color: lightgray;
+            }
+            .engl{
+                background: aquamarine;
                 background-color: aquamarine;
             }
-            .static-position{
-                position: static;
-            } 
+            .cpp{
+                background-color: lightgreen;
+            }
+            .commute{
+                background-color: lemonchiffon;
+            }
+            .lunch{
+                background-color: lightskyblue;
+            }
+            .web{
+                background-color: plum;
+            }
+            .arch{
+                background-color: lightsalmon;
+            }
+            .haiku{
+                text-align: center;
+            }
+            
+            
         </style>
     </head>
     <body>
@@ -17,7 +55,9 @@
             <h1>Stephen Spencer</h1>
         </header>
         <main>
-            <img alt ="It's what they call 'You'" src = "img/picture2.jpeg">
+            <div class="image">
+            <img title = "* It's what they call 'You'" src = "img/picture2.jpeg" alt = "a selfie" height="300">
+            </div>
             <!-- Have a header (level 2) that says: “Personal Info:”
             Next, use an unordered list (bullet points) and give me the following pieces of info:
             
@@ -26,16 +66,153 @@
                 What year are you in, currently, at UVU.
                 Your favorite flavor of ice cream (mmmm, ice cream).
             -->
-            <h2>
-                
-                Personal info:
+            <section>
+                <h2> Personal info: </h2>
+                <ul>
+                    <li> <b>Major:</b> Computer Science</li>
+                    <li> <b>High School:</b> Spanish Fork High School class of 2020</li>
+                    <li> <b>Year at UVU:</b> Sophmore <i>(technically) (I have like 49 credits but this is my first semester actually at the campus)</i></li>
+                    <li> <b>Favorie Ice Cream:</b> Mint chocolate chip!!</li>
+                </ul>
+            </section>
+            <!--Enter your Five favorite books
+
+            Have a level-2 header titled “My five favorite books”
+            Choose five books that you like the best, and list them in the order of your preference.
+            Each title should be italicized. Each author’s name should be in regular text.
+            Add hyperlinks. For each of the five books you listed, make the author’s name a hyperlink to the author’s website. -->
+            <section>
+                <h2> My favorite books/series:</h2>
                 <ol>
-                    <li> Major: Computer Science</li>
-                    <li> Spanish Fork High School class of 2020</li>
-                    <li> UVU Sophmore (technically) (I have like 49 credits but this is my first semester actually at the campus)</li>
-                    <li> Mint chocolate chip!!</li>
+                    <li><cite>Dune</cite>, <a href="https://en.wikipedia.org/wiki/Frank_Herbert">Frank Herbert</a></li>
+                    <li><cite>Lord of the Rings</cite>, <a href="https://en.wikipedia.org/wiki/J._R._R._Tolkien">J. R. R. Tolkien</a></li>
+                    <li><cite>The Shining</cite>, <a href="https://en.wikipedia.org/wiki/Stephen_King">Stephen King</a></li>
+                    <li><cite>A Song of Ice and Fire</cite>, <a href="https://georgerrmartin.com/">George R. R. Martin</a> (never getting finished lmao)</li>
+                    <li><cite>Percy Jackson</cite>, <a href="https://rickriordan.com/">Rick Riordan</a></li>
+
                 </ol>
-            </h2>
+            </section>
+            <!-- Compose a haiku or a limerick, or other short poem (3 or 4 lines).  Please keep your poem PG-rated (no potty humor, no sexually suggestive stuff).
+
+            Have a level-2 header with a title of your poem
+            Have a sentence or two explaining your inspiration for the poem.
+            Put your poem after the header.
+            Each line should use line-breaks, not paragraph breaks.-->
+            <section>
+                <h2>Pointless Triumph</h2>
+                <p class="haiku">
+                    Climbing a mountain<br>
+                    Witnessing the end of time<br>
+                    Resting on a bench<br><br>
+                </p>
+                <p>
+                    Just a haiku vaugely inspired by some of my favorite games.
+                </p>
+            </section>
+            <!--Brief Essay (15 pts)
+
+            Make a level-2 header titled something like: “My personal interests”
+            Give me three paragraphs, with three or more sentences each. In each paragraph talk about something you’re interested in.-->
+            <section>
+                <h2>My Personal Interests</h2>
+                <p>The strongest intrest I've held, ever since my dad won a GBA in a raffle when I was 4 years old, has been gaming. Honestly, it was really hard to choose between majoring in computer science or game development. Some of my favorites include Zelda, Metroid, Dark Souls, and many indies such as Celeste, Outer Wilds, and Factorio. </p>
+                <p>Parallel to that, I also really enjoy computers! I wouln't be here if I didn't. It's just great to learn all the ins and outs of computing, both hardware and software. I yearn for the opportunity to build a new computer.</p>
+                <p>Outside of tech, I'm also pretty into prog rock/prog metal. Yes and King Crimson are absolute classics. Lately I've been getting into King Gizzard and Tool.</p>
+            </section>
+
+            <!--For the Class Schedule I want you to create a table that shows your weekly class schedule. This is easy to do using table elements, but it does require some attention to detail. 
+
+            Make a level-2 header titled “class schedule”
+            Create a table with 6 columns.
+            Set the border size to 1, so I can see the borders for each cell. Set the cell spacing to 3, and set the cell padding to 3.
+            The header row should have a blank cell, followed by cells for Monday, Tuesday, Wednesday, Thursday, and Friday. If you have a Saturday class (you poor soul), you can add a sixth column (or not, I don’t care, really).
+            Going down the left side of the table, I want you to list out the hours of your week-day in 30-minute increments. You can start as early as you feel necessary.
+            List the classes you have as cells. Use the row-span element to block out as many 30-minute cells as you need for each item.  If you have stuff that starts at an odd time, then guess.  I won’t care, as long as it doesn’t look all wonky.
+            Fill up your schedule. Make stuff up if you have to.  I want to see at least four classes that run M-W-F or Tu-Th or every weekday.  In addition to classes, You can put your employment, your work-out time, your commute time, or anything else you like.
+            Use the rowspan attribute, so if you have an hour-long class, the cell should take up two rows, without a line between them.-->
+            <h2>Class Schedule</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <th>8:00 AM</th>
+                    <td rowspan="17" class="flex"><strong>Variable</strong><br>Work,<br> Studying,<br>Free time,<br>Etc.</td> <!--My work does not have a set schedule which makes my MWF unpredictable-->
+                    <td class="commute">Commute to UVU</td>
+                    <td rowspan="17" class="flex"><strong>Variable</strong></td>
+                    <td class="commute">Commute to UVU</td>
+                    <td rowspan="17" class="flex"><strong>Variable</strong></td>
+                </tr>
+                <tr>
+                    <th>8:30 </th>
+                    <td rowspan="3" class="cpp">CS 2370<br> C++</td>
+                    <td rowspan="3" class="cpp">CS 2370<br> C++</td>
+                </tr>
+                <tr>
+                    <th>9:00</th>
+                </tr>
+                <tr>
+                    <th>9:30</th>
+                </tr>
+                <tr>
+                    <th>10:00</th>
+                    <td rowspan="3" class="engl">English 1010</td>
+                    <td rowspan="3" class="engl">English 1010</td>
+                    
+                </tr>
+                <tr>
+                    <th>10:30</th>
+                </tr>
+                <tr>
+                    <th>11:00</th>
+                </tr>
+                <tr>
+                    <th>11:30</th>
+                    <td rowspan="3" class="lunch">Lunch</td>
+                    <td rowspan="3" class="lunch">Lunch</td>
+                </tr>
+                <tr>
+                    <th>12:00 PM</th>
+                </tr>
+                <tr>
+                    <th>12:30</th>
+                </tr>
+                <tr>
+                    <th>1:00</th>
+                    <td rowspan="3" class="web">CS 2550<br> Web Dev I</td>
+                    <td rowspan="3" class="web">CS 2550<br> Web Dev I</td>
+                </tr>
+                <tr>
+                    <th>1:30</th>
+                </tr>
+                <tr>
+                    <th>2:00</th>
+                </tr>
+                <tr>
+                    <th>2:30</th>
+                    <td rowspan="3" class="arch">CS 2810<br> Computer Org. Architecutre</td>
+                    <td rowspan="3" class="arch">CS 2810<br> Computer Org. Architecutre</td>
+                </tr>
+                <tr>
+                    <th>3:00</th>
+                </tr>
+                <tr>
+                    <th>3:30</th>
+                </tr>
+                <tr>
+                    <th>4:00</th>
+                    <td class="commute">Commute Home</td>
+                    <td class="commute">Commute Home</td>
+                </tr>
+            </table>
+            <!--I heard my favorite web dev, the creator of cookie clicker, complaining about <table> recently, and...
+                I get it now.-->
+            
 
         </main>
         <footer></footer>

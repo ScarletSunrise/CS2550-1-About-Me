@@ -1,0 +1,42 @@
+body{
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    color:maroon;
+    background-color: rgb(161, 220, 161);
+}
+.image{
+    float: right;
+    padding: 10px;
+}
+td, th{
+    border: 1px solid black;
+    padding: 3px;
+    border-spacing: 3px;
+    text-align: start;
+    width: 100px;
+    
+}
+.flex{
+    background-color: lightgray;
+}
+.engl{
+    background: aquamarine;
+    background-color: aquamarine;
+}
+.cpp{
+    background-color: lightgreen;
+}
+.commute{
+    background-color: lemonchiffon;
+}
+.lunch{
+    background-color: lightskyblue;
+}
+.web{
+    background-color: plum;
+}
+.arch{
+    background-color: lightsalmon;
+}
+.haiku{
+    text-align: center;
+}

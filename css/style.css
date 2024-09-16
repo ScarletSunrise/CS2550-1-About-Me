@@ -3,9 +3,15 @@ body{
     color:maroon;
     background-color: rgb(161, 220, 161);
 }
+p{
+    font-size: 12pt;
+}
+p::first-letter{
+    padding-left: 5ch;
+}
 .image{
     float: right;
-    padding: 10px;
+    margin: 10px;
 }
 td, th{
     border: 1px solid black;
@@ -13,13 +19,11 @@ td, th{
     border-spacing: 3px;
     text-align: start;
     width: 100px;
-    
 }
 .flex{
     background-color: lightgray;
 }
 .engl{
-    background: aquamarine;
     background-color: aquamarine;
 }
 .cpp{

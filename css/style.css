@@ -1,10 +1,34 @@
 body{
     font-family:'Trebuchet MS', Arial, sans-serif;
     color:maroon;
-    background-color: rgb(161, 220, 161);
+    background: url("../img/background.png");
+}
+section, header{
+    
+    width: fit-content;
+    
+    padding: 5px 30px;
+    background-color: #a3d4a0;
+    margin: 10px;
+    border: 2px maroon ridge;
+    
+}
+h1{
+    
+    font-size: 36pt;
+    border-bottom: maroon 4px ridge;
+    padding: 0 10pt;
+
 }
 p{
     font-size: 12pt;
+}
+h2 + p{
+    margin-top:12pt;
+}
+h2{
+    border-bottom: maroon ridge 2px;
+    width: fit-content;
 }
 p::first-letter{
     padding-left: 5ch;
@@ -12,13 +36,18 @@ p::first-letter{
 .image{
     float: right;
     margin: 10px;
+    
 }
 td, th{
-    border: 1px solid black;
+    border: 2px ridge maroon;
     padding: 3px;
     border-spacing: 3px;
     text-align: start;
     width: 100px;
+}
+tr:nth-child(even){
+    background-color: #66AA66;
+    
 }
 .flex{
     background-color: lightgray;
@@ -43,4 +72,7 @@ td, th{
 }
 .haiku{
     text-align: center;
+}
+.haiku::first-letter{
+    padding-left: 0;
 }
